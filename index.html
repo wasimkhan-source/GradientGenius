@@ -59,10 +59,24 @@
     <!-- Security and Performance -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src * data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com;" />
 
-    <!-- Icons (Favicon & Touch Icons) -->
-    <link rel="icon" href="https://www.aapkiwebsite.com/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.aapkiwebsite.com/apple-touch-icon.png" />
-    <link rel="manifest" href="https://www.aapkiwebsite.com/site.webmanifest" />
+   <!-- Modern SVG Favicon -->
+<link rel="icon" type="image/svg+xml" href="https://www.aapkiwebsite.com/favicon.svg" />
+
+<!-- PNG Fallback for older browsers -->
+<link rel="icon" type="image/png" sizes="192x192" href="https://www.aapkiwebsite.com/favicon-192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="https://www.aapkiwebsite.com/favicon-512.png" />
+
+<!-- Apple Touch Icon for iOS Devices -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.aapkiwebsite.com/apple-touch-icon.png" />
+
+<!-- Android Chrome & Web App Manifest (For PWA Support) -->
+<link rel="manifest" href="https://www.aapkiwebsite.com/site.webmanifest" />
+
+<!-- Windows & Safari Pinned Tab -->
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="msapplication-config" content="https://www.aapkiwebsite.com/browserconfig.xml" />
+
 
     <!-- Lazy Loading for Performance -->
     <link rel="stylesheet" href="https://www.aapkiwebsite.com/css/styles.css" media="print" onload="this.onload=null;this.removeAttribute('media');" />
